@@ -15,25 +15,6 @@ A lightweight, accessible implementation of a checkbox group that supports both 
 
 ![Demo of drag-select functionality](Demo/Multi%20Select%20Radio%20Boxes.gif)
 
-## Usage
-
-1. Include the required files:
-```html
-<link rel="stylesheet" href="styles.css">
-<script src="app.js"></script>
-```
-
-2. Add the HTML structure:
-```html
-<div class="radio-group" role="group" aria-labelledby="groupLabel" aria-describedby="groupInstructions">
-    <div class="radio-item" tabindex="0">
-        <input type="checkbox" id="option1" name="options" aria-label="Option 1">
-        <label for="option1">Option 1</label>
-    </div>
-    <!-- Add more options as needed -->
-</div>
-```
-
 ## Accessibility Features
 
 - Keyboard Navigation:
