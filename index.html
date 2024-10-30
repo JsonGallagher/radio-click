@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Select Options</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Multi-Select Options</h1>
+        
+        <div class="instructions" id="groupInstructions">
+            <p>Select options by:</p>
+            <ul>
+                <li>Clicking individual checkboxes</li>
+                <li>Using Space or Enter to toggle selected item</li>
+                <li>Using Shift + Arrow keys to select multiple</li>
+                <li>Click and drag to select multiple items</li>
+            </ul>
+        </div>
+
+        <div class="radio-group" 
+             role="group" 
+             aria-labelledby="groupLabel" 
+             aria-describedby="groupInstructions">
+            <div id="groupLabel" class="sr-only">Selectable options group</div>
+            
+            <div class="radio-item" tabindex="0">
+                <input type="checkbox" 
+                       id="option1" 
+                       name="options"
+                       aria-label="Option 1">
+                <label for="option1">Option 1</label>
+            </div>
+            
+            <div class="radio-item" tabindex="0">
+                <input type="checkbox" 
+                       id="option2" 
+                       name="options"
+                       aria-label="Option 2">
+                <label for="option2">Option 2</label>
+            </div>
+            
+            <div class="radio-item" tabindex="0">
+                <input type="checkbox" 
+                       id="option3" 
+                       name="options"
+                       aria-label="Option 3">
+                <label for="option3">Option 3</label>
+            </div>
+            
+            <div class="radio-item" tabindex="0">
+                <input type="checkbox" 
+                       id="option4" 
+                       name="options"
+                       aria-label="Option 4">
+                <label for="option4">Option 4</label>
+            </div>
+            
+            <div class="radio-item" tabindex="0">
+                <input type="checkbox" 
+                       id="option5" 
+                       name="options"
+                       aria-label="Option 5">
+                <label for="option5">Option 5</label>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Live region for screen reader announcements -->
+    <div aria-live="polite" class="sr-only" id="announcement"></div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
